@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Forum, serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero {
+    background-color: #f08e80;
+    min-height: 90vh;
+    color: #fff;
+    display: inline-block;
+
+    & .hero__content {
+        padding: 0 15%;
+
+        & .hero__content__tagline {
+            font-size: 4.5rem;
+            letter-spacing: 2px;
+            padding: 32px 0;
+        }
+
+        & .hero__content__column {
+            font-size: 2rem;
+
+            & p {
+                width: 50%;
+                float: left;
+                //box-sizing: border-box; - Not needed?
+            }
+
+            & .hero__content__column__skills {
+                width: 50%;
+                float: left;
+                box-sizing: border-box;
+                padding: 0;
+                list-style: none;
+
+                > li {
+                    width: 50%;
+                    float: left;
+                    box-sizing: border-box;
+                    font-size: 1.25rem;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    background-color: #fff;
+    padding: 64px 0;
+
+    & .blog__content {
+        padding: 0 15%;
+
+        & .blog__content__column {
+            font-size: 2rem;
+            display: inline-block;
+
+            > h4 {
+                width: 50%;
+                float: left;
+                margin: 0;
+                //box-sizing: border-box; - Not needed?
+            }
+
+            & .blog__content__articles {
+                width: 50%;
+                float: left;
+                //box-sizing: border-box; - Not needed?
+
+                & .blog__content__post {
+                    & .blog__content__post__title {
+                        font-size: 1.5rem;
+                        margin: 8px 0;
+                    }
+
+                    & .blog__content__post__text {
+                        font-size: 1rem;
+                        margin: 8px 0;
+                    }
+
+                    & .blog__content__post__date {
+                        font-size: 0.9rem;
+                        color: grey;
+                        margin: 8px 0 32px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.events {
+    background-color: #fdf0e6;
+    padding: 64px 0;
+
+    & .events__content {
+        padding: 0 15%;
+
+        & .events__content__column {
+            display: inline-block;
+            width: 100%;
+            font-size: 2rem;
+
+            > h4 {
+                width: 50%;
+                float: left;
+                margin: 0;
+                //box-sizing: border-box; - Not needed?
+            }
+
+            & .events__content__column__events-list {
+                width: 50%;
+                float: left;
+                margin: 0;
+
+                & .events__content__column__events-list__event {
+                    & .events__content__column__events-list__event__title {
+                        font-size: 1.5rem;
+                        margin: 8px 0;
+                    }
+
+                    & .events__content__column__events-list__event__location {
+                        font-size: 1rem;
+                        margin: 8px 0;
+                    }
+
+                    & .events__content__column__events-list__event__date {
+                        font-size: 0.9rem;
+                        color: grey;
+                        margin: 8px 0 32px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 24px 32px;
+
+    & .contact {
+        background-color: white;
+        color: #f08e80;
+        padding: 16px 24px;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    & .links {
+        & a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+
+    & img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 8px;
+    }
+}
